@@ -13,6 +13,7 @@ namespace TiendaDeProductos
         {
             this.costo = costo;
             InitializeComponent();
+            lbCosto.Text = costo.ToString();
         }
         
         //Todo Evento o método que maneja o dispara la acción
@@ -20,10 +21,22 @@ namespace TiendaDeProductos
         //Los argumentos nunca pueden cambiar de tipo
         private void txtbPago_KeyPress(object sender, KeyPressEventArgs e)
         {
+            
             if (e.KeyChar == 13)
             {
-                Pagar pagar = new Pagar(double.Parse(txtbPago.Text), costo);
-                lbCambio.Text = pagar.Cambio().ToString() ;
+                try
+                {
+                    Pagar pagar = new Pagar(double.Parse(txtbPago.Text), costo);
+
+
+
+                    lbCambio.Text = pagar.Cambio().ToString();
+                }
+                catch
+                {
+
+                }
+                
             }
         }
     }
