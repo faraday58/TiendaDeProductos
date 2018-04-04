@@ -28,8 +28,6 @@ namespace TiendaDeProductos
                 {
                     Pagar pagar = new Pagar(double.Parse(txtbPago.Text), costo);
 
-
-
                     lbCambio.Text = pagar.Cambio().ToString();
                 }
                 catch
