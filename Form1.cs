@@ -51,8 +51,11 @@ namespace TiendaDeProductos
         private void btnPagar_Click(object sender, EventArgs e)
         {
             if( rdbEfectivo.Checked)
-            {                
-                
+            {
+                double costo = double.Parse(txtbPrecio.Text )* byte.Parse(txtbCantidad.Text);
+                PagoEfectivo pagoEfectivo = new PagoEfectivo(costo);
+                pagoEfectivo.Show();
+               
 
             }
             else if( rdbTarjeta.Checked)
