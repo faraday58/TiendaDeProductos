@@ -43,8 +43,6 @@
             this.rdbEfectivo = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.txtbPrecio = new System.Windows.Forms.TextBox();
-            this.txtbPago = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -179,24 +177,6 @@
             this.txtbPrecio.Size = new System.Drawing.Size(144, 20);
             this.txtbPrecio.TabIndex = 1;
             // 
-            // txtbPago
-            // 
-            this.txtbPago.Enabled = false;
-            this.txtbPago.Location = new System.Drawing.Point(146, 286);
-            this.txtbPago.Name = "txtbPago";
-            this.txtbPago.Size = new System.Drawing.Size(144, 20);
-            this.txtbPago.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Enabled = false;
-            this.label6.Location = new System.Drawing.Point(74, 293);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Pago";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,9 +187,7 @@
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.txtbPago);
             this.Controls.Add(this.txtbPrecio);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtbExistencia);
             this.Controls.Add(this.label4);
@@ -243,8 +221,6 @@
         private System.Windows.Forms.RadioButton rdbEfectivo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtbPrecio;
-        private System.Windows.Forms.TextBox txtbPago;
-        private System.Windows.Forms.Label label6;
     }
 }
 

@@ -51,15 +51,16 @@ namespace TiendaDeProductos
         private void btnPagar_Click(object sender, EventArgs e)
         {
             if( rdbEfectivo.Checked)
-            {
-                txtbPago.Enabled = true;
-                label6.Enabled = true;
-                Pagar miPago = new Pagar( double.Parse(txtbPago.Text),double.Parse(txtbPrecio.Text) * double.Parse(txtbCantidad.Text));
+            {                
+                
 
             }
-            if( rdbTarjeta.Checked)
+            else if( rdbTarjeta.Checked)
             {
 
+            }else
+            {
+                MessageBox.Show("Debe de seleccionar una forma de pago");
             }
         }
     }
