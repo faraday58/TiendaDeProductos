@@ -95,6 +95,7 @@ namespace TiendaDeProductos
             {
                 clave = clave + aleatorio.Next(9).ToString();
             }
+            //Manejo de las cifras decimales
             cantidadExistencia = (byte)aleatorio.Next(30);
             Precio = (float)Math.Round(aleatorio.NextDouble(),2)*10;
 

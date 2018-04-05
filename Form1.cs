@@ -52,14 +52,18 @@ namespace TiendaDeProductos
         {
             if( rdbEfectivo.Checked)
             {
-                txtbPago.Enabled = true;
-                label6.Enabled = true;
-                Pagar miPago = new Pagar( double.Parse(txtbPago.Text),double.Parse(txtbPrecio.Text) * double.Parse(txtbCantidad.Text));
+                double costo = double.Parse(txtbPrecio.Text )* byte.Parse(txtbCantidad.Text);
+                PagoEfectivo pagoEfectivo = new PagoEfectivo(costo);
+                pagoEfectivo.Show();
+               
 
             }
-            if( rdbTarjeta.Checked)
+            else if( rdbTarjeta.Checked)
             {
 
+            }else
+            {
+                MessageBox.Show("Debe de seleccionar una forma de pago");
             }
         }
     }
