@@ -34,6 +34,7 @@
             this.lbCambio = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbCosto = new System.Windows.Forms.Label();
+            this.lbError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtbPago
@@ -87,6 +88,15 @@
             this.lbCosto.Size = new System.Drawing.Size(0, 13);
             this.lbCosto.TabIndex = 2;
             // 
+            // lbError
+            // 
+            this.lbError.AutoSize = true;
+            this.lbError.ForeColor = System.Drawing.Color.Red;
+            this.lbError.Location = new System.Drawing.Point(297, 65);
+            this.lbError.Name = "lbError";
+            this.lbError.Size = new System.Drawing.Size(0, 13);
+            this.lbError.TabIndex = 1;
+            // 
             // PagoEfectivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,6 +106,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbCambio);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbError);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtbPago);
             this.Name = "PagoEfectivo";
@@ -113,5 +124,6 @@
         private System.Windows.Forms.Label lbCambio;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbCosto;
+        private System.Windows.Forms.Label lbError;
     }
 }

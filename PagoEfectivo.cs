@@ -27,12 +27,17 @@ namespace TiendaDeProductos
                 try
                 {
                     Pagar pagar = new Pagar(double.Parse(txtbPago.Text), costo);
-
+                    if(  double.Parse(txtbPago.Text) < costo)
+                    {
+                        throw new ApplicationException("El monto es inferior al precio del producto");
+                    }
+                    lbError.Text = " ";
                     lbCambio.Text = pagar.Cambio().ToString();
                 }
-                catch
+                catch(ApplicationException error)
                 {
-
+                    lbError.Text = error.Message;
+                    
                 }
                 
             }
