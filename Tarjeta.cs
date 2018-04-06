@@ -14,6 +14,6 @@ namespace TiendaDeProductos
         string FechaVencimiento { get; set; }
         
         double Monto { get; set; }
-        void Validar();
+        string Validar();
     }
 }

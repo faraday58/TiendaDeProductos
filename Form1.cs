@@ -60,11 +60,16 @@ namespace TiendaDeProductos
             }
             else if( rdbTarjeta.Checked)
             {
+                double monto = double.Parse(txtbPrecio.Text) * byte.Parse(txtbCantidad.Text);
+                Tarjetafomr tarjeta = new Tarjetafomr(monto);
+                tarjeta.Show();
+                this.Hide();
 
             }else
             {
                 MessageBox.Show("Debe de seleccionar una forma de pago");
             }
         }
+
     }
 }
