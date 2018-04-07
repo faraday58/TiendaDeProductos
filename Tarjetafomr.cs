@@ -35,6 +35,7 @@ namespace TiendaDeProductos
 
         private void btnValidar_Click(object sender, EventArgs e)
         {
+            //Ejemplo realizado en clase
             Pagar pagotarjeta = new Pagar(Monto);
             pagotarjeta.Monto = Monto;
             pagotarjeta.Cv = txtCv.Text;
